@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first db site</title>
+</head>
+<body>
+    <H1>HELLO DATABASE</H1>
+<!--     
+        <label for="fname">Input Eng</label><br>
+        <input type="text" id="eng"><br>
+        <button id="btn" onclick="handle()">submit</button>
+        <br>
+        <label for="lname">Jap Output</label><br>
+        <input type="text" id="jap"><br><br> -->
+        <button onclick="getdata()">get</button>
+        <div id="out"></div>   
+
+        <form method="post" action="http://localhost:3000/po">
+            <input type="text" name="user[name]">
+            <input type="text" name="user[email]">
+            <input type="submit" value="Submit">
+        </form>
+
+<script src="src/app.js"></script>
+</body>
+
+</html>
