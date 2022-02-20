@@ -1,0 +1,33 @@
+.container{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 80px;
+    /* border: solid; */
+}
+
+#eng {
+    flex: 50%;
+    font-size: 30px;
+}
+
+#jap {
+    flex: 50%;
+    font-size: 30px;
+}
+
+form {
+    margin: 30px;
+}
+
+input {
+    width: 505px;
+    height: 34px;
+    font-size: 18px;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+}

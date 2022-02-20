@@ -5,26 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>first db site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <H1>HELLO DATABASE</H1>
-<!--     
-        <label for="fname">Input Eng</label><br>
-        <input type="text" id="eng"><br>
-        <button id="btn" onclick="handle()">submit</button>
-        <br>
-        <label for="lname">Jap Output</label><br>
-        <input type="text" id="jap"><br><br> -->
-        <button onclick="getdata()">get</button>
-        <div id="out"></div>   
+    <H1 style="margin-left: 30px;">Eng-Jap Dictionary</H1>
 
-        <form method="post" action="http://localhost:3000/po">
-            <input type="text" name="user[name]">
-            <input type="text" name="user[email]">
-            <input type="submit" value="Submit">
-        </form>
+    <form>
+        <input type="text" id="inputfld" autocomplete="off">
+        <button onclick="getdata()">get word</button>
+    </form>
+        
+        <div class="container"  style="height: 20px; margin-bottom: 0px; border: none;">
+            <div style="width: 300px;">
+                English
+            </div>
+            <div style="width: 300px;">
+                Japanese
+            </div>
+        </div>
+        <div class="container" style="margin-top: 0px;">
+            <div id="eng">
+                
+            </div>
 
-<script src="src/app.js"></script>
+            <div id="jap">
+                
+            </div>
+        </div> 
+        <div style="margin-left:30px;">Definition:</div>
+        <div class="container" id="def"></div>       
+        
+        <script src="app.js"></script>
 </body>
 
 </html>
